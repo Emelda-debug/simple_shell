@@ -16,4 +16,5 @@ void execute_command(char *command);
 void parse_input(char *input, char **tokens);
 void handle_exit(void);
 void handle_env(void);
+int betty_check(void);
 #endif
