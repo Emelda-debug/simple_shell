@@ -15,7 +15,7 @@ int token_count = 0;
 	{
 	tokens[token_count++] = token;
 	token = strtok(NULL, " \t\n\r\a");
-	if (token_count >= 2)
+	if (token_count > 2)
 	{
 	fprintf(stderr, "Too many arguments\n");
 	exit(EXIT_FAILURE);
