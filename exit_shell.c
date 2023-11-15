@@ -4,6 +4,6 @@
  */
 void handle_exit(void)
 {
-	printr("Exiting...\n");
+	printf("Exiting shell...\n");
 	exit(EXIT_SUCCESS);
 }

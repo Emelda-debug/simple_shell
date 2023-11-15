@@ -21,7 +21,6 @@
 #define INFO_INIT
 
 
-void printr(const char *string);
 void execute_command(char *command);
 void parse_input(char *input, char **tokens);
 void handle_exit(void);

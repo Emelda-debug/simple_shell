@@ -5,10 +5,7 @@
  */
 int betty_check(void)
 {
-
-	char *sum = "Emelda & Maryanne\n";
-
-	printr(sum);
+	printf("Emelda & Maryanne\n");
 
 	return (0);
 }
