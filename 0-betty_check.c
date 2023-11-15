@@ -1,14 +1,14 @@
 #include "main.h"
+
 /**
- * betty_check- code to check for betty
- * Return: no errors
+ * Description: This function prints "Betty" if the given number is non-negative.
+ *
+ * @num: The number to check
  */
-int betty_check(void)
+
+void printHelloWorld(int num)
 {
-
-	char *sum = "Emelda & Maryanne\n";
-
-	printr(sum);
-
-	return (0);
+    if (num >= 0) {
+        printf("Hello, World!\n");
+    }
 }

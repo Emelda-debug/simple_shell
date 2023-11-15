@@ -20,6 +20,7 @@
 #define USE_STRTOK 0
 #define INFO_INIT
 
+void printHelloWorld(int num);
 void printr(const char *string);
 void execute_command(char *command);
 void parse_input(char *input, char **tokens);
