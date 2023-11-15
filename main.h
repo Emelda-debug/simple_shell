@@ -20,27 +20,12 @@
 #define USE_STRTOK 0
 #define INFO_INIT
 
-void printHelloWorld(int num);
+
 void printr(const char *string);
 void execute_command(char *command);
 void parse_input(char *input, char **tokens);
 void handle_exit(void);
 void handle_env(void);
 int betty_check(void);
-int _strlen(char *);
-int _strcmp(char *, char *);
-char *_strcat(char *, char *);
-void *_realloc(void *, unsigned int, unsigned int);
-char *_memset(char *, char, unsigned int);
-void ffree(char **);
 
-typedef struct information
-{
-	char *arg;
-	char *path;
-	int argc;
-	char *fname;
-	int status;
-	int readfd;
-} info_t;
 #endif

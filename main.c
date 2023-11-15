@@ -9,9 +9,9 @@ int main(void)
 char *input = NULL;
 size_t input_size = 0;
 char *tokens[2];
-int a = 0;
-	printHelloWorld(a);
-
+{
+betty_check();
+}
 
 	while (1)
 {
