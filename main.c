@@ -9,9 +9,6 @@ int main(void)
 char *input = NULL;
 size_t input_size = 0;
 char *tokens[2];
-{
-betty_check();
-}
 
 	while (1)
 {
