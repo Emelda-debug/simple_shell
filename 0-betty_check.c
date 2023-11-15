@@ -8,7 +8,7 @@
 
 void printHelloWorld(int num)
 {
-    if (num >= 0) {
-        printf("Hello, World!\n");
-    }
+if (num >= 0) {
+	printf("Hello, World!\n");
+	}
 }
