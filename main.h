@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <stddef.h>
 
 #define MAX_INPUT_SIZE 1024
 #define MAX_TOKENS 100
@@ -19,7 +20,6 @@
 #define USE_GETLINE 0
 #define USE_STRTOK 0
 #define INFO_INIT
-
 
 void execute_command(char *command);
 void parse_input(char *input, char **tokens);
@@ -46,6 +46,7 @@ extern char **environ;
  * @fname: program file name
  * @status: return status of the last executed command
  * @readfd: fd from which to read line input
+ * @argv: array of strings generated
  */
 typedef struct information
 {
@@ -55,7 +56,7 @@ typedef struct information
 	char *fname;
 	int status;
 	int readfd;
-
+	char **argv;
 } info_t;
 /**
  * struct inherent- builtin string and related function
