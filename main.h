@@ -20,7 +20,7 @@
 #define USE_STRTOK 0
 #define INFO_INIT
 
-void printr(const char *string);
+
 void execute_command(char *command);
 void parse_input(char *input, char **tokens);
 void handle_exit(void);
@@ -67,5 +67,4 @@ typedef struct inherent
 	char *t;
 	int (*func)(info_t *);
 } inherent_t;
-
 #endif

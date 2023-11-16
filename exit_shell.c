@@ -6,6 +6,6 @@
 void handle_exit(void)
 {
 
-	printr("Exiting...");
+	printf("Exiting..\n");
 	exit(EXIT_SUCCESS);
 }

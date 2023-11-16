@@ -11,7 +11,6 @@ int status;
 	pid = fork();
 	if (pid == 0)
 	{
-	/*Child process*/
 	if (execlp(command, command, (char *)NULL) == -1)
 	{
 	perror("shell");

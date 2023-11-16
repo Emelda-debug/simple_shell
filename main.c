@@ -9,14 +9,15 @@ int main(void)
 char *input = NULL;
 size_t input_size = 0;
 char *tokens[2];
+
 	while (1)
 {
-	printr("myshell$ ");
+	printf("myshell$ ");
 	if (getline(&input, &input_size, stdin) == -1)
 	{
 	if (feof(stdin))
 	{
-	printr("Exiting...\n");
+	printf("Exiting...\n");
 	break;
 	}
 	else
