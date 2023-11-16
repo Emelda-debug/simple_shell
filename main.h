@@ -32,7 +32,21 @@ char *_strcat(char *, char *);
 void *_realloc(void *, unsigned int, unsigned int);
 char *_memset(char *, char, unsigned int);
 void ffree(char **);
-
+char **custom_strtok(char *s, char *del);
+int is_delim(char, char *);
+int isalphabet(int);
+int _atoi(char *);
+int hello(void);
+extern char **environ;
+/**
+ * struct information- pseudo-arguments to pass into a function
+ * @arg: string generated from getline
+ * @path: current command string path
+ * @argc: argument counter
+ * @fname: program file name
+ * @status: return status of the last executed command
+ * @readfd: fd from which to read line input
+ */
 typedef struct information
 {
 	char *arg;
@@ -41,5 +55,17 @@ typedef struct information
 	char *fname;
 	int status;
 	int readfd;
+
 } info_t;
+/**
+ * struct inherent- builtin string and related function
+ * @t: the builtin command flag
+ * @func: the function
+ */
+typedef struct inherent
+{
+	char *t;
+	int (*func)(info_t *);
+} inherent_t;
+
 #endif

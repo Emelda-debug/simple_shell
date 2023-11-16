@@ -30,7 +30,7 @@ void *_realloc(void *p, unsigned int o, unsigned int n)
 	o = o < n ? o : n;
 	while (o--)
 	{
-		pnt[o] = ((char *)p) [o];
+		pnt[o] = ((char *)p)[o];
 	}
 	free(p);
 	return (pnt);
